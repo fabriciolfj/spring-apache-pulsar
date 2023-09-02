@@ -1,0 +1,11 @@
+server:
+  port: 9090
+spring:
+  pulsar:
+    defaults:
+      type-mappings:
+        - message-type: com.github.pulser.User
+          schema-info:
+            schema-type: JSON
+    client:
+      service-url: pulsar://localhost:6650
